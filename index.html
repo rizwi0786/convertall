@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- bootstrap icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>ConvertIt</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary bg-red" style="background-color: aquamarine;padding: 0px;">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand " href="#">
+                <img src="./double-reverse-arrow-transfer-mobile-260nw-2086263349-removebg-preview.png" alt="Logo"
+                    width="100" height="100" class="d-inline-block align-text-center " style="padding-bottom: 10px; ">
+                <span style="font-weight: 350; font-size: 50px;">ConvertAll</span>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="mainc">
+
+            <div class="in-cont">
+                <div class="tit-name">Common Converter</div>
+                <div class="typec d-flex justify-content-around ">
+                    <button class="type1 btnc">Length</button>
+                    <button class="type2 btnc">Weight</button>
+                    <button class="type3 btnc">Temperature</button>
+                    <button class="type4 btnc">Time</button>
+                    <button class="type5 btnc">Area</button>
+                </div>
+            </div>
+
+            <div class="in-cont">
+                <div class="tit-name">Physical Converter</div>
+                <div class="typec d-flex justify-content-around ">
+                    <button class="type6 btnc">Speed</button>
+                    <button class="type7 btnc">Force</button>
+                    <button class="type8 btnc">Pressure</button>
+                    <button class="type9 btnc">Volume</button>
+
+                </div>
+            </div>
+
+            <div class="in-cont">
+                <div class="tit-name">Digital Converter</div>
+                <div class="typec d-flex justify-content-around ">
+                    <button class="type10 btnc">Base change</button>
+                    
+                    <button class="type11 btnc">Data-storage</button>
+                </div>
+            </div>
+            <div class="in-cont">
+                <div class="tit-name">Currency Converter</div>
+                <div class="typec d-flex justify-content-around ">
+                    <button class="type12 btnc">World Currency</button>
+
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </main>
+    <div class=" modal1 models hidden">
+        <button class="close-modal">&times;</button>
+        <h1>Length Converter</h1>
+        <div class="inp-con">
+
+            <div class="inpc">
+                <input type="number" name="firstn" id="no11" class="no-in" oninput="func11()">
+                <select id="unit11" class="unit-in" oninput="func11()">
+                    <option value="0">Meter(m)</option>
+                    <option value="1">Decimeter(dm)</option>
+                    <option value="2">Centimeter(cm)</option>
+                    <option value="3">milimeter(mm)</option>
+                    <option value="4">micrometer(µm)</option>
+                    <option value="5">Nanometer(ɳm)</option>
+                    <option value="6">Kilometer(km)</option>
+                    <option value="7">Mile(M)</option>
+                    <option value="8">Foot(ft)</option>
+                    <option value="9">Inch(In)</option>
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="number" name="secondn" id="no12" class="no-in" oninput="func12()">
+                <select id="unit12" class="unit-in" oninput="func11()">
+                    <option value="0">Meter(m)</option>
+                    <option value="1">Decimeter(dm)</option>
+                    <option value="2">Centimeter(cm)</option>
+                    <option value="3">milimeter(mm)</option>
+                    <option value="4">micrometer(µm)</option>
+                    <option value="5">Nanometer(ɳm)</option>
+                    <option value="6">Kilometer(km)</option>
+                    <option value="7">Mile(M)</option>
+                    <option value="8">Foot(ft)</option>
+                    <option value="9">Inch(In)</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <!-- Weight  -->
+    <div class=" modal2 models hidden">
+        <button class="close-modal cm2">&times;</button>
+        <h1>Weight Converter</h1>
+        <div class="inp-con">
+
+            <div class="inpc">
+                <input type="number" name="firstn" id="no21" class="no-in" oninput="func21()">
+                <select id="unit21" class="unit-in" oninput="func21()">
+                    <option value="0">Kilogram(Kg)</option>
+                    <option value="1">Gram(g)</option>
+                    <option value="2">Miligram(mg)</option>
+                    <option value="3">Microgram(µg)</option>
+                    <option value="4">Nanogram(ɳm)</option>
+                    <option value="5">Ton</option>
+                    <option value="6">Quintal</option>
+                    <option value="7">Pound</option>
+                    
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="number" name="secondn" id="no22" class="no-in" oninput="func22()">
+                <select id="unit22" class="unit-in" oninput="func21()">
+                    <option value="0">Kilogram(Kg)</option>
+                    <option value="1">Gram(g)</option>
+                    <option value="2">Miligram(mg)</option>
+                    <option value="3">Microgram(µg)</option>
+                    <option value="4">Nanogram(ɳm)</option>
+                    <option value="5">Ton</option>
+                    <option value="6">Quintal</option>
+                    <option value="7">Pound</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <!-- temp  -->
+    <div class=" modal3 models hidden">
+        <button class="close-modal cm3">&times;</button>
+        <h1>Temperature Converter</h1>
+        <div class="inp-con">
+
+            <div class="inpc">
+                <input type="number" name="firstn" id="no31" class="no-in" oninput="func31()">
+                <select id="unit31" class="unit-in" oninput="func31()">
+                    <option value="0">Celsius(°C)</option>
+                    <option value="1">Kelvin(K)</option>
+                    <option value="2">Fahrenheit(°F)</option>   
+                    
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="number" name="secondn" id="no32" class="no-in" oninput="func32()">
+                <select id="unit32" class="unit-in" oninput="func31()">
+                    <option value="0">Celsius(°C)</option>
+                    <option value="1">Kelvin(K)</option>
+                    <option value="2">Fahrenheit(°F)</option>   
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <!-- time  -->
+
+    <div class=" modal4 models hidden">
+        <button class="close-modal cm4">&times;</button>
+        <h1>Time Converter</h1>
+        <div class="inp-con">
+
+            <div class="inpc">
+                <input type="number" name="firstn" id="no41" class="no-in" oninput="func41()">
+                <select id="unit41" class="unit-in" oninput="func41()">
+                    <option value="0">Second</option>
+                    <option value="1">Minute</option>
+                    <option value="2">Hour</option>   
+                    <option value="3">Day</option>   
+                    <option value="4">Milisecond</option>   
+                    <option value="5">Microsecond</option>   
+                    <option value="6">Nanosecond</option>   
+                    
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="number" name="secondn" id="no42" class="no-in" oninput="func42()">
+                <select id="unit42" class="unit-in" oninput="func41()">
+                    <option value="0">Second</option>
+                    <option value="1">Minute</option>
+                    <option value="2">Hour</option>   
+                    <option value="3">Day</option>   
+                    <option value="4">Milisecond</option>   
+                    <option value="5">Microsecond</option>   
+                    <option value="6">Nanosecond</option>    
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <!-- Area  -->
+    <div class=" modal5 models hidden">
+        <button class="close-modal cm5">&times;</button>
+        <h1>Length Converter</h1>
+        <div class="inp-con">
+
+            <div class="inpc">
+                <input type="number" name="firstn" id="no51" class="no-in" oninput="func51()">
+                <select id="unit51" class="unit-in" oninput="func51()">
+                    <option value="0">Meter-sqr(m^2)</option>
+                    <option value="1">Decimeter-sqr(dm^2)</option>
+                    <option value="2">Centimeter-sqr(cm^2)</option>
+                    <option value="3">milimeter-sqr(mm^2)</option>
+                    <option value="4">micrometer-sqr(µm^2)</option>
+                    <option value="5">Nanometer-sqr(ɳm^2)</option>
+                    <option value="6">Kilometer-sqr(km^2)</option>
+                    <option value="7">Mile-sqr(M^2)</option>
+                    <option value="8">Foot-sqr(ft^2)</option>
+                    <option value="9">Inch-sqr(In^2)</option>
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="number" name="secondn" id="no52" class="no-in" oninput="func52()">
+                <select id="unit52" class="unit-in" oninput="func51()">
+                    <option value="0">Meter-sqr(m^2)</option>
+                    <option value="1">Decimeter-sqr(dm^2)</option>
+                    <option value="2">Centimeter-sqr(cm^2)</option>
+                    <option value="3">milimeter-sqr(mm^2)</option>
+                    <option value="4">micrometer-sqr(µm^2)</option>
+                    <option value="5">Nanometer-sqr(ɳm^2)</option>
+                    <option value="6">Kilometer-sqr(km^2)</option>
+                    <option value="7">Mile-sqr(M^2)</option>
+                    <option value="8">Foot-sqr(ft^2)</option>
+                    <option value="9">Inch-sqr(In^2)</option>
+                </select>
+            </div>
+        </div>
+
+    </div> 
+    <!-- velocity  -->
+    <div class=" modal6 models hidden">
+        <button class="close-modal cm6">&times;</button>
+        <h1>Speed Converter</h1>
+        <div class="inp-con">
+
+            <div class="inpc">
+                <input type="number" name="firstn" id="no61" class="no-in" oninput="func61()">
+                <select id="unit61" class="unit-in" oninput="func61()">
+                    <option value="0">Meter/second(m/s)</option>
+                    <option value="1">meter/minute(m/min)</option>
+                    <option value="2">Meter/hour(m/hr)</option>
+                    <option value="3">Kilometer/hour(km/hr)</option>
+                    <option value="4">Miles/hour(M/hr)</option>
+                    <option value="5">Relative to light speed(C)</option>
+                    
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="number" name="secondn" id="no62" class="no-in" oninput="func62()">
+                <select id="unit62" class="unit-in" oninput="func61()">
+                    <option value="0">Meter/second(m/s)</option>
+                    <option value="1">meter/minute(m/min)</option>
+                    <option value="2">Meter/hour(m/hr)</option>
+                    <option value="3">Kilometer/hour(km/hr)</option>
+                    <option value="4">Miles/hour(M/hr)</option>
+                    <option value="5">Relative to light speed(C)</option>
+                </select>
+            </div>
+        </div>
+
+    </div> 
+    <!-- velocity  -->
+    <!-- force  -->
+    <div class=" modal7 models hidden">
+        <button class="close-modal cm7">&times;</button>
+        <h1>Force Converter</h1>
+        <div class="inp-con">
+
+            <div class="inpc">
+                <input type="number" name="firstn" id="no71" class="no-in" oninput="func71()">
+                <select id="unit71" class="unit-in" oninput="func71()">
+                    <option value="0">Newton(kg-m/s^2)</option>
+                    <option value="1">KiloNewton(kN)</option>
+                    <option value="2">MiliNewton(mN)</option>
+                    <option value="3">gram-force(gf)</option>
+                    <option value="4">Dyne(dyn)</option>
+                    <option value="5">Joule/meter(j/m)</option>
+                    
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="number" name="secondn" id="no72" class="no-in" oninput="func72()">
+                <select id="unit72" class="unit-in" oninput="func71()">
+                    <option value="0">Newton(kg-m/s^2)</option>
+                    <option value="1">KiloNewton(kN)</option>
+                    <option value="2">MiliNewton(mN)</option>
+                    <option value="3">gram-force(gf)</option>
+                    <option value="4">Dyne(dyn)</option>
+                    <option value="5">Joule/meter(j/m)</option>
+                </select>
+            </div>
+        </div>
+
+    </div> 
+    <!-- force  -->
+    <!-- Pressure  -->
+    <div class=" modal8 models hidden">
+        <button class="close-modal cm8">&times;</button>
+        <h1>Pressure Converter</h1>
+        <div class="inp-con">
+
+            <div class="inpc">
+                <input type="number" name="firstn" id="no81" class="no-in" oninput="func81()">
+                <select id="unit81" class="unit-in" oninput="func81()">
+                    <option value="0">Pascal(P)</option>
+                    <option value="1">Kilopascal(kP)</option>
+                    <option value="2">standard atomsphere(atm)</option>
+                    <option value="3">Newton/meter^2(N/m^2)</option>
+                    <option value="4">Bar</option>
+                    <option value="5">Milibar(mb)</option>
+                    <option value="6">Torr(tor)</option>
+                    <option value="7">Milimeter of mercurey(mHg)</option>
+                    
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="number" name="secondn" id="no82" class="no-in" oninput="func82()">
+                <select id="unit82" class="unit-in" oninput="func81()">
+                    <option value="0">Pascal(P)</option>
+                    <option value="1">Kilopascal(kP)</option>
+                    <option value="2">standard atomsphere(atm)</option>
+                    <option value="3">Newton/meter^2(N/m^2)</option>
+                    <option value="4">Bar</option>
+                    <option value="5">Milibar(mb)</option>
+                    <option value="6">Torr(tor)</option>
+                    <option value="7">Milimeter of mercurey(mHg)</option>
+                </select>
+            </div>
+        </div>
+
+    </div> 
+    <!-- Pressure  -->
+    <!-- Volume  -->
+    <div class=" modal9 models hidden">
+        <button class="close-modal cm9">&times;</button>
+        <h1>Volume Converter</h1>
+        <div class="inp-con">
+
+            <div class="inpc">
+                <input type="number" name="firstn" id="no91" class="no-in" oninput="func91()">
+                <select id="unit91" class="unit-in" oninput="func91()">
+                    <option value="0">Cubic meter(m^3)</option>
+                    <option value="1">Cubic Centimeter(cm^3/cc)</option>
+                    <option value="2">Cubic Inch(inch^3)</option>
+                    <option value="3">Liter(l)</option>
+                    <option value="4">milileter(ml)</option>
+                    <option value="5">Gallon(gl)</option>
+                    
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="number" name="secondn" id="no92" class="no-in"10 oninput="func92()">
+                <select id="unit92" class="unit-in" oninput="func91()">
+                    <option value="0">Cubic meter(m^3)</option>
+                    <option value="1">Cubic Centimeter(cm^3/cc)</option>
+                    <option value="2">Cubic Inch(inch^3)</option>
+                    <option value="3">Liter(l)</option>
+                    <option value="4">milileter(ml)</option>
+                    <option value="5">Gallon(gl)</option>
+                </select>
+            </div>
+        </div>
+
+    </div> 
+    <!-- Volume  -->
+    <!-- base  -->
+    <div class=" modal10 models hidden">
+        <button class="close-modal cm10">&times;</button>
+        <h1>Base Converter</h1>
+        <div class="inp-con">
+
+            <div class="inpc">
+                <input type="text" name="firstn" id="no101" class="no-in" oninput="func101()">
+                <select id="unit101" class="unit-in" oninput="func101()">
+                    <option value="0">Decimal(10)</option>
+                    <option value="1">Binary(2)</option>
+                    <option value="2">Hexadecimal(16)</option>
+                    <option value="3">Octadecimal(8)</option>
+                    
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="text" name="secondn" id="no102" class="no-in" oninput="func102()">
+                <select id="unit102" class="unit-in" oninput="func101()">
+                    <option value="0">Decimal(10)</option>
+                    <option value="1">Binary(2)</option>
+                    <option value="2">Hexadecimal(16)</option>
+                    <option value="3">Octadecimal(8)</option>
+                </select>
+            </div>
+        </div>
+
+    </div> 
+    <!-- base  -->
+    <!-- data storage  -->
+    <div class=" modal11 models hidden">
+        <button class="close-modal cm11">&times;</button>
+        <h1>Data Converter</h1>
+        <div class="inp-con">
+
+            <div class="inpc">
+                <input type="number" name="firstn" id="no111" class="no-in" oninput="func111()">
+                <select id="unit111" class="unit-in" oninput="func111()">
+                    <option value="0">Bit(b)</option>
+                    <option value="1">Byte(B)</option>
+                    <option value="2">Nibble</option>
+                    <option value="3">KiloBit(Kb)</option>
+                    <option value="4">KiloByte(KB)</option>
+                    <option value="5">MegaBit(Mb)</option>
+                    <option value="6">MegaByte(MB)</option>
+                    <option value="7">GigaBit(Gb)</option>
+                    <option value="8">GigaByte(GB)</option>
+                    <option value="9">TeraBit(Tb)</option>
+                    <option value="10">TeraByte(TB)</option>
+                    
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="number" name="secondn" id="no112" class="no-in" oninput="func112()">
+                <select id="unit112" class="unit-in" oninput="func111()">
+                    <option value="0">Bit(b)</option>
+                    <option value="1">Byte(B)</option>
+                    <option value="2">Nibble</option>
+                    <option value="3">KiloBit(Kb)</option>
+                    <option value="4">KiloByte(KB)</option>
+                    <option value="5">MegaBit(Mb)</option>
+                    <option value="6">MegaByte(MB)</option>
+                    <option value="7">GigaBit(Gb)</option>
+                    <option value="8">GigaByte(GB)</option>
+                    <option value="9">TeraBit(Tb)</option>
+                    <option value="10">TeraByte(TB)</option>
+                </select>
+            </div>
+        </div>
+
+    </div> 
+    <!-- data storage  -->
+    <!-- currency  -->
+    <div class=" modal12 models hidden">
+        <button class="close-modal cm12">&times;</button>
+        <h1>Currency Converter</h1>
+        <div class="inp-con">
+            <p>From</p>
+            <div class="inpc">
+                <input type="number" name="firstn" id="no121" class="no-in" oninput="func121()">
+                <select id="unit121" class="unit-in" oninput="func121()">
+                    
+                </select>
+            </div>
+            <p>To</p>
+            <div class="inpc">
+                <input type="number" name="secondn" id="no122" class="no-in" disabled oninput="func122()">
+                <select id="unit122" class="unit-in" oninput="func121()">
+                    
+                </select>
+            </div>
+        </div>
+
+    </div> 
+    <!-- currency  -->
+
+    <!-- overlay  -->
+    <div class="overlay hidden"></div>
+    <!-- <div class="overlay hidden"></div> -->
+    <!-- bootstrap script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+    <script src="./script3.js"></script>
+    <script src="./script4.js"></script>
+    <script src="./script5.js"></script>
+    <script src="./script6.js"></script>
+    <script src="./script7.js"></script>
+    <script src="./script8.js"></script>
+    <script src="./script9.js"></script>
+    <script src="./script10.js"></script>
+    <script src="./script11.js"></script>
+    <script src="./script12.js"></script>
+</body>
+
+</html>
